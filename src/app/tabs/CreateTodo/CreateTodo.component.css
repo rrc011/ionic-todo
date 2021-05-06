@@ -1,0 +1,5 @@
+ion-input {
+    --background: rgb(63, 70, 167);
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+}

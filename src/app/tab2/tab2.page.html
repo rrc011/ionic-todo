@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Completed </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-refresher slot="fixed" (ionRefresh)="getTasks($event)">
+        <ion-refresher-content> </ion-refresher-content>
+    </ion-refresher>
+    <ion-list>
+        <!-- Sliding item with icon start options on end side -->
+        <ion-item-sliding *ngFor="let item of lstTask; let i=index">
+            <ion-item>
+                <ion-label> {{item.description}} </ion-label>
+                <ion-icon
+                    name="checkmark-done-outline"
+                    slot="end"
+                    color="primary"
+                ></ion-icon>
+            </ion-item>
+            <ion-item-options>
+                <ion-item-option color="warning" (click)="pendingTask(item)">
+                    <ion-icon slot="start" name="pricetags-outline"></ion-icon>
+                    Pending
+                </ion-item-option>
+                <ion-item-option color="danger" (click)="deleteTask(item)">
+                    <ion-icon slot="start" name="trash-outline"></ion-icon>
+                    Delete
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>

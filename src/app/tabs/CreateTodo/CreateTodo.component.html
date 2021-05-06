@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>New Task</ion-title>
+        <ion-buttons slot="secondary">
+    <ion-button (click)="dismissModal()">
+      <ion-icon name="close-circle-outline"></ion-icon> Close
+    </ion-button>
+  </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12" size-lg>
+                <ion-input placeholder="Enter Description" [(ngModel)]="task.description"></ion-input>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-button expand="full" color="primary" style="position: fixed; bottom:0; width:100%; height:3rem" (click)="save()">
+        <ion-icon name="save-outline"></ion-icon> Save
+    </ion-button>
+</ion-content>
