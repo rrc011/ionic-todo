@@ -1,6 +1,6 @@
 # ionic-todo
 
-This is a calculator with the basic functions
+This is a to do list app
 
 ![Ionic calculator](https://raw.githubusercontent.com/rrc011/ionic-todo/main/Screenshot_2.png)
 
