@@ -2,7 +2,7 @@
 
 This is a calculator with the basic functions
 
-![Ionic calculator](https://raw.githubusercontent.com/rrc011/ionic-calculator/main/Screenshot_2.png)
+![Ionic calculator](https://raw.githubusercontent.com/rrc011/ionic-todo/main/Screenshot_2.png)
 
 ## Getting Started
 - Clone the project
